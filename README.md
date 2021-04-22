@@ -20,4 +20,14 @@ This is because the Nano operates on 3.3v for it's inputs. The labeling on the j
 Hopefully this helps, along with the email I sent out about smoothing analog reading data. That blog post can be found here:
 https://maker.pro/arduino/tutorial/how-to-clean-up-noisy-sensor-data-with-a-moving-average-filter
 
-I'll be updating this repo with another example for a more 'tame' keyboard soon.
+## A more controlled keyboard
+
+With the built in keyboard and mouse examples, the keyboard buttons you are pressing can be "pressed" dozens of times in a brief instant. How do we slow this down? What are other ways of using the keyboard?
+
+New Arduino example "USB_Keyboard-Press_Release" walks you through different strategies. We can use the delay() function to slow down the overall speed of the sketch. However, we can also break down the action of "pressing" a key: the moment we press it and then moment we release it. A "press and hold" interaction may be more useful than repeated tapping for as long as an electrical connection is made.
+
+Look at the keyboard library reference here:
+https://www.arduino.cc/reference/en/language/functions/usb/keyboard/
+
+and the section about pressing includes releasing as well:
+https://www.arduino.cc/reference/en/language/functions/usb/keyboard/keyboardpress/
