@@ -31,3 +31,15 @@ https://www.arduino.cc/reference/en/language/functions/usb/keyboard/
 
 and the section about pressing includes releasing as well:
 https://www.arduino.cc/reference/en/language/functions/usb/keyboard/keyboardpress/
+
+## Unity MIDI CC
+
+I've update the Unity Example One project. If you go to the MIDI example scene, and open "midiBoxScript.cs", you'll see that I have added input for MIDI CC messages. These are currently setup to work with the "SmoothedAnalog_CC-MIDI" message above. Wire up a potentiometer to make the box spin!
+
+## Your Arduino's "Pinout"
+
+Which pins are which?! When you put the Nano in a breadboard, you can't see the pin lables anymore. Boo! But we have a diagram of the pins here. Yay!
+
+https://content.arduino.cc/assets/Pinout-NANO33IoT_latest.png
+
+<img src="https://content.arduino.cc/assets/Pinout-NANO33IoT_latest.png" alt="joystick wiring" width="400"/>
