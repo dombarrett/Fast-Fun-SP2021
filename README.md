@@ -43,3 +43,10 @@ Which pins are which?! When you put the Nano in a breadboard, you can't see the 
 https://content.arduino.cc/assets/Pinout-NANO33IoT_latest.png
 
 <img src="https://content.arduino.cc/assets/Pinout-NANO33IoT_latest.png" alt="joystick wiring" width="400"/>
+
+
+## Keyboard, plus Mouse... plus MIDI???
+
+This was asked in the final class. Yes! It is possible. All you have to do is include all of the relevant ".h" files from the examples. I've uploaded a basic approach that has worked on my Mac. It is possible that the device driver issue may show itself on windows again, but this time for each device- the KBM and the MIDI. You may need to select generic drivers for both, specifically.
+
+There is a whole world of more sophisticated (and complicated) approaches to USB devices. I'll follow up in a class email. But hopefully this helps you, if you're trying to combine approaches for whatever reason.
